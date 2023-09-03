@@ -1,0 +1,140 @@
+
+:root{
+    --main: #00b98e;
+    --main-dark: #02ab83;
+    --main-light : #26c49f;
+    --white: #fafafa;
+    --dark : #0e2e50;
+    --neutral : #666565;
+}
+.c-main{
+    color: var(--main);
+}
+
+
+
+*{
+    font-family: "Heebo", sans-serif;
+}
+body{
+    background-color: var(--white);
+}
+a{
+    text-decoration: none;
+}
+
+.header-carousel{
+    height: 100%;
+}
+.btn-main{
+    background-color: var(--white)  !important;
+    color:var(--main);
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.5s;
+}
+.btn-main-hover{
+    background-color: var(--main-light);
+    color: var(--white);
+}
+.btn-dark{
+    background-color: var(--dark);
+    color: var(--white);
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.5s;
+    border: 2px solid var(--dark);
+}
+.btn-dark-hover{
+    background-color: var(--white);
+    border: 2px solid var(--dark);
+    color: var(--dark);
+}
+
+.btn-carousel{
+    background-color: aquamarine;
+    height: 50px;
+    width: 50px;
+}
+.header-carousel, .btn-carousel:focus{
+    background-color: var(--main);
+    color:var(--white);
+    transition : all 0.5s;
+    border-radius: 50px;
+}
+/*Categorie*/
+.category-card{
+        border:solid 15px var(--white);
+        border-radius: 15px;
+        transition: all 0.5s;
+        max-width: 50px;
+        margin: auto;
+}
+.category-card .border-dashed{
+    border: dashed 1px var(--main);
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+.category-card .icon{
+    border: dashed 1px var(--main);
+    padding:20px;
+    color:var(--main);
+    font-size: 18px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: white;
+}
+.category-card-hover .border-dashed{
+    background-color: var(--main);;
+}
+.category-card h3{
+    color: var(--dark);
+    transition: all 0.5s;
+}
+.category-card p{
+    color: var(--main);
+    transition: all 0.5s;
+}
+.category-card-hover h3{
+    color:white;
+}
+.category-card-hover p {
+    color:white;
+}
+#navbar{
+    transition: all 0.5s;
+}
+#navbar .nav-link{
+    text-transform: uppercase;
+    color: var(--dark);
+    font-weight: 600;
+    padding: 16px 24px;
+    transition: all 0.5s;
+}
+#navbar .nav-link:hover{
+    color: var(--main);
+}
+#navbar .nav-link:active{
+    color: var(--main);
+}
+.navbar-scrolled{
+
+    margin: 0px;
+}
+
+.search-panel{
+    top: -50px;
+    position: relative;
+    border-radius: 10px;
+}
+
+@media screen and (min-width:992px) 
+{#navbar {
+    margin : 40px 100px 0px
+}
+    
+}
+
